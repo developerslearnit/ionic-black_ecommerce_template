@@ -1,0 +1,56 @@
+<ion-content scrollY="false">
+  <div
+    style="background: url('assets/imgs/ridetodark.jpg');background-size:cover"
+    class="productlarge"
+  >
+    <ion-icon
+      (click)="moveBack()"
+      class="back_btn"
+      name="arrow-back"
+    ></ion-icon>
+
+    <ion-icon class="fav_icon" name="heart"></ion-icon>
+  </div>
+  <div class="product_description">
+    <h3>
+      Exclusive Camo Sweater
+    </h3>
+    <div class="attr_wrap">
+      <ion-grid>
+        <ion-row>
+          <ion-col><p>Size</p> </ion-col>
+          <ion-col><p style="margin-left: 20px;">Quantity</p> </ion-col>
+        </ion-row>
+        <ion-row class="attr">
+          <ion-col class="size"
+            ><p>S</p>
+            <p class="active">M</p>
+            <p>L</p></ion-col
+          >
+          <ion-col class="quantity"
+            ><p>-</p>
+            <p class="active">1</p>
+            <p>+</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div class="btn_wrap">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="5">
+            <ion-icon class="cart" name="cart"></ion-icon>
+          </ion-col>
+
+          <ion-col size="7">
+            <ion-button expand="block">
+              Buy Now
+              <ion-icon slot="end" name="arrow-round-forward"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,30 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", Courier, monospace !important;
+}
+
+html.ios,
+html.md {
+  font-family: "Roboto", Courier, monospace !important;
+}
+
+ion-content {
+  --background: #2a2b37 !important;
+}
+
+.swiper-pagination {
+  .swiper-pagination-bullet-active {
+    width: 16px;
+    height: 8px;
+    border-radius: 3px;
+    --bullet-background-active: #d4d0d0;
+  }
+}
+
+.ll {
+  background: #2a2b38 !important;
+}

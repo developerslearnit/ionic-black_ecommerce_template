@@ -1,0 +1,114 @@
+ion-content {
+  .productlarge {
+    height: 65%;
+    background: #fff;
+    position: relative;
+    ion-icon {
+      position: absolute;
+      background: #2a2b37;
+    }
+
+    .fav_icon {
+      right: 18px;
+      top: 34px;
+      padding: 8px;
+      border-radius: 10px;
+      color: #696d77;
+      font-size: 19px;
+    }
+
+    .back_btn {
+      left: 18px;
+      top: 37px;
+      padding: 7px;
+      border-radius: 7px;
+    }
+  }
+
+  .product_description {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    border-radius: 30px 30px 0 0;
+    background: #2a2b37 !important;
+    bottom: 0;
+    left: 0;
+    padding: 20px 18px 18px 18px !important;
+
+    h3 {
+      color: #87878e;
+      font-size: 2rem;
+      margin: 0;
+      line-height: 2rem;
+    }
+
+    .attr_wrap {
+      margin-top: 30px;
+      // height: 50px;
+      //background: #fff;
+      width: 100%;
+      padding: 5px 0 20px 0;
+
+      ion-col {
+        p {
+          margin: 0;
+          color: #606064;
+          font-size: 20px;
+        }
+      }
+
+      ion-row.attr {
+        margin-top: 15px;
+        ion-col {
+          p {
+            display: inline;
+            padding: 10px;
+            margin: 0 10px 0 0;
+            font-size: 18px;
+            font-weight: bold;
+          }
+        }
+
+        .size {
+          p.active {
+            background: #47495c;
+            padding: 7px 10px;
+            color: #fff;
+            border-radius: 10px;
+          }
+        }
+
+        .quantity {
+          p.active {
+            background: #47495c;
+            padding: 7px 15px;
+            color: #fff;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+    .btn_wrap {
+      position: absolute;
+      bottom: 15px;
+      padding-right: 15px;
+      left: 10px;
+      width: 100%;
+
+      ion-button {
+        --background: #474c58 !important;
+        height: 54px;
+        --border-radius: 15px;
+      }
+
+      .cart {
+        background: #20222d;
+        padding: 15px;
+        border-radius: 15px;
+        color: #696d77;
+        font-size: 25px;
+      }
+    }
+  }
+}

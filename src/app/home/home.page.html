@@ -1,14 +1,149 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <div class="top_bar">
+    <div class="app_title">
+      <h2>
+        Blvck
+      </h2>
+    </div>
+
+    <div class="top_icon">
+      <img src="assets/icon/home_top_icon.png" alt="" />
+    </div>
+  </div>
+
+  <div class="search_bar">
+    <ion-input placeholder="Search.."></ion-input>
+    <ion-icon name="search"></ion-icon>
+    <div style="clear: both;"></div>
+  </div>
+  <!--
+  <ion-searchbar placeholder="Filter Schedules"></ion-searchbar> -->
+
+  <div class="categoryNav">
+    <ion-slides pager="false" [options]="slideOpts">
+      <ion-slide (click)="fetchCategory()">
+        <h5>
+          Brand New
+        </h5>
+      </ion-slide>
+      <ion-slide (click)="fetchCategory()">
+        <h5>
+          Clothes
+        </h5>
+      </ion-slide>
+      <ion-slide (click)="fetchCategory()">
+        <h5>
+          Leather
+        </h5>
+      </ion-slide>
+      <ion-slide (click)="fetchCategory()">
+        <h5>
+          Accessories
+        </h5>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div class="product_slide">
+    <ion-slides pager="true" [options]="productSlideOption">
+      <ion-slide (click)="details()">
+        <div
+          style="background: url('assets/imgs/shakehoode.jpg');background-size:cover"
+          class="pImage"
+        >
+          <h3 class="productName">
+            Shake Hoode
+          </h3>
+
+          <p class="price">
+            $80.00
+          </p>
+
+          <ion-icon name="heart-empty"></ion-icon>
+        </div>
+      </ion-slide>
+      <ion-slide (click)="details()">
+        <div
+          style="background: url('assets/imgs/ridetodark.jpg');background-size:cover"
+          class="pImage"
+        >
+          <h3 class="productName">
+            Shake Hoode
+          </h3>
+
+          <p class="price">
+            $80.00
+          </p>
+
+          <ion-icon name="heart-empty"></ion-icon>
+        </div>
+      </ion-slide>
+      <ion-slide (click)="details()">
+        <div
+          style="background: url('assets/imgs/shakehoode.jpg');background-size:cover"
+          class="pImage"
+        >
+          <h3 class="productName">
+            Shake Hoode
+          </h3>
+
+          <p class="price">
+            $80.00
+          </p>
+          <ion-icon name="heart-empty"></ion-icon>
+        </div>
+      </ion-slide>
+      <ion-slide (click)="details()">
+        <div
+          style="background: url('assets/imgs/ridetodark.jpg');background-size:cover"
+          class="pImage"
+        >
+          <h3 class="productName">
+            Shake Hoode
+          </h3>
+
+          <p class="price">
+            $80.00
+          </p>
+          <ion-icon name="heart-empty"></ion-icon>
+        </div>
+      </ion-slide>
+
+      <!--
+        <img src="assets/imgs/shakehoode.jpg" alt="" /> -->
+    </ion-slides>
+  </div>
+  <ion-item>
+    <ion-icon slot="end" name="arrow-round-forward"></ion-icon>
+
+    <ion-label>Featured</ion-label>
+  </ion-item>
+  <div class="featured_wrap">
+    <ion-slides pager="false" [options]="featuredSlideOption">
+      <ion-slide>
+        <div
+          class="fimage"
+          style="background: url('assets/imgs/f1.jpg');background-size:cover"
+        >
+          <ion-icon name="heart-empty"></ion-icon>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div
+          class="fimage"
+          style="background: url('assets/imgs/f2.jpg');background-size:cover"
+        >
+          <ion-icon name="heart-empty"></ion-icon>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div
+          class="fimage"
+          style="background: url('assets/imgs/f3.jpg');background-size:cover"
+        >
+          <ion-icon name="heart-empty"></ion-icon>
+        </div>
+      </ion-slide>
+    </ion-slides>
   </div>
 </ion-content>
