@@ -1,6 +1,6 @@
 Ionic Black ECommerce Template
 
-![](https://ibb.co/X4VZz81)
+![](https://res.cloudinary.com/panachora/image/upload/v1573632790/ionic_black_ecommerce_app_gnvijj.png)
 
 ## Installation
 
